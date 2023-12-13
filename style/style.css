@@ -1,5 +1,7 @@
 body {
-  background-color: black;
+  background-color: wheat;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -20,7 +22,7 @@ display: flex;
 /* Début de barre de navigation */
 .nav-bar{
 	display: flex;
-    justify-content:space-between;
+    justify-content:flex-start;
 	background-color: white;
 	border-bottom: grey solid 3px;
 	margin: 0;
@@ -39,18 +41,22 @@ display: flex;
 {
 	display: flex;
 	justify-content: space-between;
+	text-align: center;
 	list-style: none;
-	gap: 4.25rem;
+	gap: 4.25rem; 
 	padding-bottom: 0%;
 	padding-left: 0;
 	margin: 0;
-
+	border: solid 3px green;
+	width: 100%;
+	
 }
 /* effet de survol barre du haut hébergement et activités textes à l'intérieur */ 
 .bar-right:hover,.bar-left:hover
 {
-	border-top: #0065fc 2px solid;
-	color: #0065fc;
+	border-top: palevioletred 2px solid;
+	color:palevioletred;
+	/* border: transparent 2px solid; */
 }
 
 /* permet de regler l'eloignement de la barre entre le texte et la marge supérieur */
@@ -64,20 +70,13 @@ display: flex;
    width: 100%;
    padding-top: 15px;
 }
-/*permet de gérer le premier élément de la liste  */
-.liste-nav ul li:first-child
-{
-	text-align: start;
-	padding-right: 35px;
-	/* border: #000 solid; */
-	width: 100%;
-}
 
-/* permet de gérer le second élément de la liste */
-.liste-nav li:nth-child(2n)
-{
-	text-align: start;
-	width: 100%;
+/* style pour pages de présentation */
+.hero-presentation{
+	font-size: 16px;
+	width: 90%;
+	margin: 20px;
+	
 }
 
 /****Fin barre de navigation****/
